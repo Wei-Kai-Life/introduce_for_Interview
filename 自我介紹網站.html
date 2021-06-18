@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            text-decoration: none;
+            
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .pic{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(219, 180, 144);
+            background-image: url("餐飲履歷2021_工作區域\ 1.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .text{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+        }
+        .titleBox{
+            box-sizing: border-box;
+            padding: 30px;
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            color: white;
+            font-size: 42px;
+            font-weight: bolder;
+        }
+        .infoFlex{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .fb{
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+            padding: 30px;
+            border: 1px rgb(255, 255, 255) solid;
+            border-radius: 100%;
+        }
+        .fb:hover{
+            background-color: cadetblue;
+            background-color: rgb(219, 180, 144);
+            transition: 0.7s;
+        }
+        .web{
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+            padding: 30px;
+            border: 1px rgb(253, 253, 253) solid;
+            border-radius: 100%;
+        }
+        .web:hover{
+            background-color: cadetblue;
+            background-color: rgb(219, 180, 144);
+            transition: 0.7s;
+        }
+        @media(max-width: 1050px){
+            .container{
+                display: block;
+            }
+            .pic{
+                width: 80%;
+                background-color: white;
+                margin: auto;
+            }
+            .text{
+                width: 80%;
+                /* border: 1px blue solid; */
+                margin: auto;
+            }
+        }
+        @media(max-width:650px){
+            .pic{
+                width: 100%;
+                
+            }
+            .text{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic"></div>
+        <div class="text">
+            <div class="titleBox">
+                <div class="title">關於我和我的作品</div>
+            </div>
+            <div class="infoFlex">
+                <a href="https://www.facebook.com/profile.php?id=100000535736069">
+                    <div class="fb">facebook</div>
+                </a>
+                <a href="https://edwiin1688.github.io/team-work/">
+                    <div class="web">網頁設計</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
